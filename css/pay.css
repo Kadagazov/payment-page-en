@@ -1,0 +1,482 @@
+/* Scss Document */
+/*
+	HTML5 Reset :: style.css
+	----------------------------------------------------------
+	We have learned much from/been inspired by/taken code where offered from:
+
+	Eric Meyer					:: https://meyerweb.com
+	HTML5 Doctor				:: https://html5doctor.com
+	and the HTML5 Boilerplate	:: https://html5boilerplate.com
+
+-------------------------------------------------------------------------------*/
+/* Let's default this puppy out
+-------------------------------------------------------------------------------*/
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent; }
+
+article, aside, figure, footer, header, nav, section, details, summary {
+  display: block; }
+
+/* Handle box-sizing while better addressing child elements:
+   https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+/* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
+/* Responsive images and other embedded objects
+*/
+img,
+object,
+embed {
+  max-width: 100%; }
+
+/*
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+	 In fact, it *will* cause problems with Google Maps' controls at small size.
+	If this is the case for you, try uncommenting the following:
+
+#map img {
+		max-width: none;
+}
+*/
+/* force a vertical scrollbar to prevent a jumpy page */
+html {
+  overflow-y: scroll; }
+
+/* we use a lot of ULs that aren't bulleted.
+	don't forget to restore the bullets within content. */
+ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help; }
+
+/* tables still need cellspacing="0" in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+th {
+  font-weight: bold;
+  vertical-align: bottom; }
+
+td {
+  font-weight: normal;
+  vertical-align: top; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+pre {
+  white-space: pre;
+  /* CSS2 */
+  white-space: pre-wrap;
+  /* CSS 2.1 */
+  white-space: pre-line;
+  /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word;
+  /* IE */ }
+
+input[type="radio"] {
+  vertical-align: text-bottom; }
+
+input[type="checkbox"] {
+  vertical-align: bottom; }
+
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline; }
+
+.ie6 input {
+  vertical-align: text-bottom; }
+
+select, input, textarea {
+  font: 99% sans-serif; }
+
+table {
+  font-size: inherit;
+  font: 100%; }
+
+small {
+  font-size: 85%; }
+
+strong {
+  font-weight: bold; }
+
+td, td img {
+  vertical-align: top; }
+
+/* Make sure sup and sub don't mess with your line-heights https://gist.github.com/413930 */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* standardize any monospaced elements */
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif; }
+
+/* hand cursor on clickable elements */
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+input[type=file],
+button {
+  cursor: pointer; }
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {
+  margin: 0; }
+
+/* make buttons play nice in IE */
+button,
+input[type=button] {
+  width: auto;
+  overflow: visible; }
+
+/* scale images in IE7 more attractively */
+.ie7 img {
+  -ms-interpolation-mode: bicubic; }
+
+/* prevent BG image flicker upon hover
+   (commented out as usage is rare, and the filter syntax messes with some pre-processors)
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+*/
+/* let's clear some floats */
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in; }
+
+html {
+  font-size: 16px; }
+
+body {
+  background-color: #303030;
+  background: url(../img/bg-pattern.png);
+  width: 100%; }
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  width: 100%; }
+
+header, main, footer {
+  width: 100%;
+  max-width: 1000px; }
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Open Sans', 'Helvetica', 'Helvetica Neue', 'Arial', sans-serif;
+  color: #000; }
+
+span, a {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  color: inherit; }
+
+a:hover {
+  text-decoration: underline; }
+
+.page-title {
+  padding: 2em 0;
+  background-image: url("../img/back-gds.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: normal;
+  letter-spacing: .1em; }
+
+.salute {
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-align: left;
+  padding: 2em 0 .75em; }
+
+.text-header {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: .07rem;
+  text-align: left;
+  text-transform: uppercase;
+  padding: 2em 0 .75em; }
+
+.plain-text, .terms {
+  font-family: 'Arno Pro', 'Merriweather', 'Georgia', 'Times New Roman', serif;
+  color: #808080;
+  padding: 10px 0;
+  line-height: 1.5em; }
+
+header {
+  background-color: #fff;
+  text-align: center; }
+
+.logo {
+  padding: 40px 0;
+  width: 200px;
+  max-width: 400px; }
+
+main {
+  background-color: #fff;
+  padding: 20px 80px; }
+
+.info-table {
+  width: auto;
+  text-align: left;
+  margin-bottom: 1em; }
+
+.td-left {
+  font-family: 'Arno Pro', 'Merriweather', 'Georgia', 'Times New Roman', serif;
+  font-weight: bold;
+  color: #808080;
+  padding: 15px 15px 10px 0;
+  line-height: 100%;
+  text-align: left;
+  border-bottom: #e5e5e5 solid 1px;
+  width: 232px; }
+
+.td-right {
+  font-family: 'Arno Pro', 'Merriweather', 'Georgia', 'Times New Roman', serif;
+  color: #808080;
+  padding: 15px 50px 10px 0px;
+  line-height: 100%;
+  text-align: left;
+  border-bottom: #e5e5e5 solid 1px; }
+
+.small {
+  font-size: .9rem;
+  padding: 0; }
+
+.italic {
+  font-style: italic; }
+
+.bold {
+  font-weight: bold; }
+
+.terms {
+  list-style-type: disc;
+  padding-left: 1rem; }
+
+.terms li {
+  padding-bottom: .5rem; }
+
+.hotel-info-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse; }
+
+.hotel-photo {
+  padding-right: 2rem; }
+
+.hotel-photo img {
+  width: 200px; }
+
+.spoiler {
+  cursor: pointer;
+  background-color: #F2F2F2;
+  padding-left: 16px;
+  padding-right: 1rem; }
+
+.bottom-form {
+  padding: 1rem 0; }
+
+.accept-box {
+  display: block;
+  padding-left: 30px;
+  text-indent: -12px; }
+
+.accept-box input {
+  position: relative;
+  left: -17px; }
+
+.btn-w-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.btn {
+  background: #b59d82;
+  padding: .7rem 1.5rem;
+  border: 0;
+  width: auto;
+  margin: 1rem 0; }
+
+.btn span {
+  font-family: 'Merriweather', 'Georgia', 'Times New Roman', serif;
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: italic;
+  text-transform: capitalize;
+  color: #fff;
+  vertical-align: -1px;
+  letter-spacing: .05rem; }
+
+.btn:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05); }
+
+.btn:active {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95); }
+
+footer {
+  background-color: #F3F3F3;
+  padding: 20px 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+
+footer img {
+  padding-top: 15px; }
+
+.deol-logo {
+  max-width: 200px; }
+
+.awards-pic {
+  max-width: 480px; }
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 14px; }
+  header, main, footer {
+    width: 100%; }
+  .logo {
+    width: 40%;
+    max-width: 400px; }
+  .page-title {
+    padding: 1em 10%;
+    font-size: 1.5rem; }
+  .salute {
+    font-size: 1.25rem; }
+  .td-left, .td-right {
+    padding: 10px 10px 9px 0;
+    font-weight: normal;
+    width: auto; }
+  .plain-text {
+    padding-top: .25rem;
+    padding-bottom: .25rem; }
+  .hotel-photo {
+    padding: 0; }
+  .hotel-photo img {
+    width: 100%;
+    max-width: 100%; }
+  .btn {
+    padding: 1rem 2.5rem; }
+  .bottom-form img {
+    width: 62px; } }
+
+@media screen and (max-width: 480px) {
+  main {
+    padding: 0 10%; }
+  .logo {
+    padding: 10% 0; } }

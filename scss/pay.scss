@@ -1,0 +1,221 @@
+/* Scss Document */
+
+@import 'reset';
+
+* {box-sizing: border-box;
+	transition: all 0.1s ease-in;
+}
+
+html{font-size: 16px;}
+
+body {
+	background-color: #303030;
+	background: url(../img/bg-pattern.png) ;
+	width: 100%;
+	}
+.wrapper{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: nowrap;
+	width: 100%;
+	}
+
+header, main, footer {
+//	display: flex;
+//	flex-direction: column;
+//	justify-content: center;
+//	align-items: center;
+//	flex-wrap: nowrap;
+	width: 100%;
+	max-width: 1000px;
+//	padding: 30px;
+}
+
+h1,h2,h3,h4,h5{
+	font-family: 'Open Sans', 'Helvetica', 'Helvetica Neue', 'Arial', sans-serif;
+//	text-transform: uppercase;
+	color: #000;
+	}
+
+span, a {
+font-family: inherit; font-size: inherit; font-weight: inherit; text-align: inherit; text-decoration: inherit; color: inherit;
+}
+
+a:hover{text-decoration: underline;}
+
+.page-title{
+	padding: 2em 0;
+	background-image: url('../img/back-gds.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+	font-size: 2rem; font-weight: normal; letter-spacing: .1em;	
+	
+}
+
+.salute{font-size: 1.5rem; font-weight: normal; text-align: left;	padding: 2em 0 .75em;	}
+
+.text-header{font-size: 1rem; font-weight: bold; letter-spacing: .07rem; text-align: left; text-transform: uppercase; padding: 2em 0 .75em;	}
+
+.plain-text, .terms{
+	font-family: 'Arno Pro', 'Merriweather', 'Georgia', 'Times New Roman', serif;
+	color: #808080;
+	padding: 10px 0;
+	line-height: 1.5em;
+}
+
+header {
+	background-color: #fff;
+	text-align: center;
+}
+
+.logo{
+	padding: 40px 0;
+	width: 200px;
+	max-width: 400px;
+}
+
+
+main{
+	background-color: #fff;
+	padding: 20px 80px;
+}
+
+.info-table{
+	width: auto;
+	text-align: left;
+	margin-bottom: 1em;
+}
+
+.td-left{
+	font-family: 'Arno Pro', 'Merriweather', 'Georgia', 'Times New Roman', serif;
+	font-weight: bold;
+//	background-color: #bea78b;
+	color: #808080;
+	padding: 15px 15px 10px 0;
+	line-height: 100%;
+	text-align: left;
+	border-bottom: #e5e5e5 solid 1px;
+	width: 232px;
+}
+
+.td-right {
+	font-family: 'Arno Pro', 'Merriweather', 'Georgia', 'Times New Roman', serif;
+	color: #808080;
+	padding: 15px 50px 10px 0px;
+	line-height: 100%;
+	text-align: left;
+	border-bottom: #e5e5e5 solid 1px;
+}
+
+.small{font-size: .9rem;padding: 0;}
+.italic{font-style: italic;}
+.bold{font-weight: bold;}
+.terms{list-style-type: disc; padding-left: 1rem;}
+.terms li{ padding-bottom: .5rem;}
+
+.hotel-info-block{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap-reverse;
+}
+
+.hotel-photo{padding-right: 2rem;}
+
+.hotel-photo img{width: 200px; }
+
+.spoiler{cursor: pointer; background-color:#F2F2F2;padding-left: 16px; padding-right: 1rem;}
+
+.bottom-form{padding: 1rem 0;}
+
+.accept-box{display: block; padding-left: 30px; text-indent: -12px;}
+
+.accept-box input{
+	position: relative;
+	left: -17px;
+}
+
+.btn-w-logo{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.btn{
+//	display: inline-block;
+	background: #b59d82;
+	padding: .7rem 1.5rem;
+	border: 0;
+	width: auto;
+	margin: 1rem 0;
+}
+.btn span{
+	font-family: 'Merriweather', 'Georgia', 'Times New Roman', serif;
+	font-size: 1rem;
+	font-weight: normal;
+	font-style: italic;
+	text-transform: capitalize;
+	color: #fff;
+	vertical-align: -1px;
+	letter-spacing: .05rem;
+}
+
+.btn:hover{transform: scale(1.05)}
+.btn:active{transform: scale(0.95)}
+
+
+footer{
+	background-color: #F3F3F3;
+	padding: 20px 80px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+footer img{padding-top: 15px;}
+
+.deol-logo{max-width: 200px;}
+
+.awards-pic{max-width: 480px;}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+	
+	html{font-size: 14px;}
+
+	header, main, footer {width: 100%;}
+	
+	.logo{width:40%;max-width: 400px;}
+
+	.page-title{padding: 1em 10%; font-size: 1.5rem;}
+	
+	.salute{font-size: 1.25rem;}
+	
+//	.text-header{font-size: .9rem; font-weight: normal; padding: .8rem 0;	}
+
+	.td-left, .td-right{padding: 10px 10px 9px 0;font-weight: normal; width: auto;}
+	
+	.plain-text{padding-top: .25rem; padding-bottom: .25rem;}
+	
+	.hotel-photo {padding: 0;}
+	
+	.hotel-photo img{width: 100%; max-width: 100%;}
+	
+	.btn{padding: 1rem 2.5rem;}
+	
+	.bottom-form img{width: 62px;}
+
+}
+
+@media screen and (max-width: 480px) {
+	main{padding: 0 10%;}
+	.logo{padding: 10% 0;}
+
+	
+}

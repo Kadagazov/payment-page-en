@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>PAY FOR YOUR RESERVATION</title>
+<link href="css/pay.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i|Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">	
+	
+</head>
+
+<body>
+<div class="wrapper">
+<header>
+	<img class="logo" src="img/logo.png" alt="Senator Hotels and Apartments"/>
+	<h1 class="page-title">PAY FOR YOUR RESERVATION</h1>
+</header>	
+	
+<main>	
+	<h2 class="salute">Dear <span id="guestname">Guest</span>,</h2>
+	
+	
+	<p class="plain-text">Thank you for choosing Senator Hotels and Apartments. The invoice for your accommodation is ready to be paid. In order to complete the transaction, transfer to the payment by pressing <a href="#below">“Proceed” button below</a>.</p> 
+	
+	<h3 class="text-header">Your Booking Details:</h3>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="info-table">
+  <tbody>
+    <tr>
+      <td class="td-left">Your Booking Number:</td>
+      <td class="td-right"><span id="booking-num">12345</span></td>
+    </tr>
+    <tr>
+      <td class="td-left">Arrival:</td>
+      <td class="td-right"><span id="arrival-datetime">Saturday, April 28, 2018</span>, check-in after 2:00 pm</td>
+    </tr>
+    <tr>
+      <td class="td-left">Departure:</td>
+      <td class="td-right"><span id="departure-datetime">Tuesday, May 1, 2018</span>, check-out before 12:00</td>
+    </tr>
+    <tr>
+      <td class="td-left">Apartment Hotel:</td>
+      <td class="td-right"><span id="hotel-name-td">Senator Maidan</span></td>
+    </tr>
+    <tr>
+      <td class="td-left">Apartment type:</td>
+      <td class="td-right"><span id="room-type">Standard Room</span></td>
+    </tr>
+    <tr>
+      <td class="td-left">Total price:</td>
+      <td class="td-right"><span id="price">12345,99</span>&nbsp;UAH</td>
+    </tr>
+  </tbody>
+</table>
+
+	<p class="plain-text small italic">Taxes Included. Extra bed fee €50 pppn, if applicable</p>
+	
+	<h3 class="text-header">Apartment Hotel Details:</h3>
+
+	<div class="hotel-info-block">
+	<div class="hotel-photo"><img id="hotel-pic" src="https://senator-apartments.com/wp-content/uploads/2016/08/senator_maidan-1-400x300.jpg" alt=""></div>
+	
+	<div class="hotel-info">
+		<p class="plain-text bold"><span id="hotel-name-p">Senator Maidan</span></p>
+
+		<p class="plain-text"><span id="adress">8B, Tarasa Shevchenka Ln., Kyiv 01001, Ukraine</span></p>
+
+		<p class="plain-text">
+			Phone: <span id="tel">+380 44 200 77 88</span> <br>
+			Fax: <span id="fax">+380 44 200 77 80</span> <br>
+			E-mail: <span id="mail">maidan@senator-apartments.com</span>
+		</p>
+	</div>
+</div>
+	
+
+	
+	<h3 class="text-header">Cancellation Policy:</h3>
+	
+	<p class="plain-text"><span id="policy">Please note that you have chosen non-refundable rate for your booking. Reservation cannot be cancelled, amended or adjusted after booking. The prepayment cannot be refunded.</span></p>
+
+<!--
+<p class="plain-text bold">Please note that</p>	
+<ul class="terms">
+	<li>The rate is indicated in Ukrainian hryvnya. Please note that your bank account statement will show you the amount in the currency of your credit card and in Ukrainian hryvnya at the exchange rate of credit card’s issuing bank.</li>
+
+	<li>After pressing “PROCEED” you will be redirected to UPC.UA – an international certified payment gateway that handles payments on behalf of Senator Hotels and Apartments. After a successful transaction transaction you will be automatically redirected back to our site. This 3-level security scheme that complies with Visa/MasterCard security standards and prevents merchant web-sites from storing credit cards data online. Read more about this on MasterCard or Visa websites.</li>
+</ul>
+-->
+<!--	spoiler------------------------------------------->
+<dl class="spoiler" onclick="this.getElementsByTagName('div')[0].style.display=((this.getElementsByTagName('div')[0].style.display=='none')?'':'none');">
+<dt class="plain-text bold">Please note that...</dt>
+	<dd>
+	<div style="display:none;">
+		<br />
+		<ul class="terms">
+			<li>The rate is indicated in Ukrainian hryvnya. Please note that your bank account statement will show you the amount in the currency of your credit card and in Ukrainian hryvnya at the exchange rate of credit card’s issuing bank.</li>
+
+			<li>After pressing “PROCEED” you will be redirected to UPC.UA – an international certified payment gateway that handles payments on behalf of Senator Hotels and Apartments. After a successful transaction transaction you will be automatically redirected back to our site. This 3-level security scheme that complies with Visa/MasterCard security standards and prevents merchant web-sites from storing credit cards data online. Read more about this on MasterCard or Visa websites.</li>
+		</ul>
+	</div></dd>
+</dl>
+	
+<!--	--------------------------------------->
+
+<form class="bottom-form" action="">
+<label class="accept-box plain-text italic" id="below"><input type="checkbox" name="agree" value="" required style="vertical-align: -1px">I have read and accept Senator Hotels and Apartments conditions and the above rules.</label>	
+
+<div class="btn-w-logo">
+	<button type="submit" class="btn"><span>proceed</span></button>
+	<div><img src="img/mc.jpg" alt="MasterCard"/> <img src="img/visa.png" alt="VISA"/></div>
+</div>
+</form>
+ 
+<p class="plain-text">We are looking forward to welcoming you at Senator Hotels and Apartments!</p>
+	
+</main>
+	
+<footer>
+	
+<div>
+	<h3 class="text-header">MANAGING COMPANY</h3>
+	<a href="http://www.deol-partners.com/" target="_blank"><img src="img/deol.png" alt="DEOL Partners" class="deol-logo"/></a> 
+</div>
+	
+<div>
+	<h3 class="text-header">OUR AWARDS</h3>
+	<img src="img/awards.png" alt="World Travel Awards, TripAdvisor Traveller's Choice, Ukrainian Hospitality Awards, EuropeProperty.com Award"  class="awards-pic"/> 
+</div>
+
+	
+</footer>
+	
+</div>
+</body>
+</html>
