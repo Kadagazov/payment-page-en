@@ -489,7 +489,7 @@ footer {
 
 @media screen and (max-width: 480px) {
   main {
-    padding: 0 10vw; }
+    padding: 0 10vw 20px; }
   footer {
     padding: 0 10vw 20px; }
   .logo {
