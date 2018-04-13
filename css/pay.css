@@ -284,7 +284,7 @@ a:hover {
   font-family: 'Arno Pro', 'Merriweather', 'Georgia', 'Times New Roman', serif;
   color: #808080;
   padding: 10px 0;
-  line-height: 1.5em; }
+  line-height: 150%; }
 
 header {
   background-color: #fff;
@@ -309,7 +309,7 @@ main {
   font-weight: bold;
   color: #808080;
   padding: 15px 15px 10px 0;
-  line-height: 100%;
+  line-height: 150%;
   text-align: left;
   border-bottom: #e5e5e5 solid 1px;
   width: 232px; }
@@ -318,7 +318,7 @@ main {
   font-family: 'Arno Pro', 'Merriweather', 'Georgia', 'Times New Roman', serif;
   color: #808080;
   padding: 15px 50px 10px 0px;
-  line-height: 100%;
+  line-height: 150%;
   text-align: left;
   border-bottom: #e5e5e5 solid 1px; }
 
@@ -465,8 +465,12 @@ footer {
     font-size: 1.5rem; }
   .salute {
     font-size: 1.25rem; }
-  .td-left, .td-right {
+  .td-left {
     padding: 10px 10px 9px 0;
+    font-weight: normal;
+    width: auto; }
+  .td-right {
+    padding: 10px 0 9px;
     font-weight: normal;
     width: auto; }
   .plain-text {

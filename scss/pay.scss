@@ -64,7 +64,7 @@ a:hover{text-decoration: underline;}
 	font-family: 'Arno Pro', 'Merriweather', 'Georgia', 'Times New Roman', serif;
 	color: #808080;
 	padding: 10px 0;
-	line-height: 1.5em;
+	line-height: 150%;
 }
 
 header {
@@ -96,7 +96,7 @@ main{
 //	background-color: #bea78b;
 	color: #808080;
 	padding: 15px 15px 10px 0;
-	line-height: 100%;
+	line-height: 150%;
 	text-align: left;
 	border-bottom: #e5e5e5 solid 1px;
 	width: 232px;
@@ -106,7 +106,7 @@ main{
 	font-family: 'Arno Pro', 'Merriweather', 'Georgia', 'Times New Roman', serif;
 	color: #808080;
 	padding: 15px 50px 10px 0px;
-	line-height: 100%;
+	line-height: 150%;
 	text-align: left;
 	border-bottom: #e5e5e5 solid 1px;
 }
@@ -204,7 +204,8 @@ footer{
 	
 //	.text-header{font-size: .9rem; font-weight: normal; padding: .8rem 0;	}
 
-	.td-left, .td-right{padding: 10px 10px 9px 0;font-weight: normal; width: auto;}
+	.td-left{padding:10px 10px 9px 0;font-weight: normal; width: auto;}
+	.td-right{padding:10px 0 9px;font-weight: normal; width: auto;}
 	
 	.plain-text{padding-top: .25rem; padding-bottom: .25rem;}
 	
