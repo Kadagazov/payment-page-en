@@ -396,7 +396,7 @@ main {
   padding: .7rem 1.5rem;
   border: 0;
   width: auto;
-  margin: 1rem 0; }
+  margin: 1rem 2rem 1rem 0; }
 
 .btn span {
   font-family: 'Merriweather', 'Georgia', 'Times New Roman', serif;
@@ -420,7 +420,7 @@ main {
 
 footer {
   background-color: #F3F3F3;
-  padding: 20px 80px;
+  padding: 20px 80px 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -428,21 +428,28 @@ footer {
   -webkit-box-direction: normal;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start; }
 
-footer img {
-  padding-top: 15px; }
+.awards-block {
+  -ms-flex-negative: 1;
+  flex-shrink: 1; }
 
 .deol-logo {
-  max-width: 200px; }
+  width: 200px;
+  max-width: 400px;
+  padding-top: 17px;
+  margin-right: 80px; }
 
 .awards-pic {
-  max-width: 480px; }
+  width: 100%;
+  max-width: 360px;
+  padding-top: 10px;
+  margin-left: -5px; }
 
 /* Media Queries */
 @media screen and (max-width: 600px) {
@@ -451,7 +458,7 @@ footer img {
   header, main, footer {
     width: 100%; }
   .logo {
-    width: 40%;
+    width: 40vw;
     max-width: 400px; }
   .page-title {
     padding: 1em 10%;
@@ -473,10 +480,17 @@ footer img {
   .btn {
     padding: 1rem 2.5rem; }
   .bottom-form img {
-    width: 62px; } }
+    width: 62px; }
+  .awards-pic {
+    width: 100%;
+    max-width: 480px; }
+  .deol-logo {
+    width: 40vw; } }
 
 @media screen and (max-width: 480px) {
   main {
-    padding: 0 10%; }
+    padding: 0 10vw; }
+  footer {
+    padding: 0 10vw 20px; }
   .logo {
-    padding: 10% 0; } }
+    padding: 10vw 0; } }
