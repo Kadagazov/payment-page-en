@@ -505,12 +505,15 @@ footer {
   .page-title {
     padding: 1em 0;
     background-image: none;
-    text-align: center; }
+    text-align: center;
+    background-color: #F3F3F3; }
   .logo {
     padding: 0;
     width: 150px; }
   main, footer {
     padding: 0 30px; }
+  footer {
+    margin-top: 10px; }
   .salute {
     font-size: 1.25rem;
     font-weight: normal;
@@ -518,14 +521,8 @@ footer {
     padding: 0; }
   .text-header {
     padding: 1em 0; }
-  .td-left {
-    padding: 5px 10px 4px 0;
-    font-weight: normal;
-    width: auto; }
-  .td-right {
-    padding: 5px 0 4px;
-    font-weight: normal;
-    width: auto; }
+  .td-left, .td-right {
+    padding: 5px 10px 4px 0; }
   .bottom-form, .spoiler {
     display: none; }
   .awards-pic {

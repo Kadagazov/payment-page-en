@@ -128,7 +128,7 @@ main{
 
 .hotel-photo img{width: 200px; }
 
-.spoiler{cursor: pointer; background-color:#F2F2F2;padding-left: 16px; padding-right: 1rem;}
+.spoiler{cursor: pointer; background-color:#F2F2F2;padding-left: 16px; padding-right: 1rem; }
 
 .bottom-form{padding: 1rem 0;}
 
@@ -234,21 +234,24 @@ footer{
 
 @media print{
 	
+//	* { -webkit-print-color-adjust: exact; }
+	
 	html{font-size: 14px;}
 	
-	.page-title{padding: 1em 0; background-image: none; text-align: center;}
+	.page-title{padding: 1em 0; background-image: none; text-align: center; background-color: #F3F3F3;}
 	
 	.logo{padding: 0; width: 150px;}
 	
 	main, footer{padding: 0 30px;}
+	footer {margin-top: 10px;}
 	
 	.salute{font-size: 1.25rem; font-weight: normal; text-align: left;	padding: 0;	}
 	
 	.text-header{padding: 1em 0;	}
 
 
-	.td-left{padding:5px 10px 4px 0;font-weight: normal; width: auto;}
-	.td-right{padding:5px 0 4px;font-weight: normal; width: auto;}
+	.td-left, .td-right{padding:5px 10px 4px 0;}
+	
 	
 	.bottom-form, .spoiler {display: none;}
 	
