@@ -56,9 +56,9 @@ a:hover{text-decoration: underline;}
 	
 }
 
-.salute{font-size: 1.5rem; font-weight: normal; text-align: left;	padding: 2em 0 .75em;	}
+.salute{font-size: 1.5rem; font-weight: normal; text-align: left;	padding: 2em 0;	}
 
-.text-header{font-size: 1rem; font-weight: bold; letter-spacing: .07rem; text-align: left; text-transform: uppercase; padding: 2em 0 .75em;	}
+.text-header{font-size: 1rem; font-weight: bold; letter-spacing: .07rem; text-align: left; text-transform: uppercase; padding: 2em 0;	}
 
 .plain-text, .terms{
 	font-family: 'Arno Pro', 'Merriweather', 'Georgia', 'Times New Roman', serif;
@@ -230,6 +230,30 @@ footer{
 	footer{padding: 0 10vw 20px;}
 	.logo{padding: 10vw 0;}
 	
+}
 
+@media print{
 	
+	html{font-size: 14px;}
+	
+	.page-title{padding: 1em 0; background-image: none; text-align: center;}
+	
+	.logo{padding: 0; width: 150px;}
+	
+	main, footer{padding: 0 30px;}
+	
+	.salute{font-size: 1.25rem; font-weight: normal; text-align: left;	padding: 0;	}
+	
+	.text-header{padding: 1em 0;	}
+
+
+	.td-left{padding:5px 10px 4px 0;font-weight: normal; width: auto;}
+	.td-right{padding:5px 0 4px;font-weight: normal; width: auto;}
+	
+	.bottom-form, .spoiler {display: none;}
+	
+	.awards-pic{width: 360px; }
+	
+	.deol-logo{width: 170px;}
+
 }
