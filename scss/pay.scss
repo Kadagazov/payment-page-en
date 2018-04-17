@@ -92,7 +92,7 @@ a:hover{text-decoration: underline;}
 
 .text-header{font-size: 1rem; font-weight: 600; letter-spacing: .05rem; text-align: left; text-transform: uppercase; padding: 2em 0 .5em}
 
-.plain-text, .terms{
+p, .plain-text, .terms{
 	font-family: 'Arno Pro', 'Georgia', 'Times New Roman', serif;
 	color: #808080;
 	padding: 10px 0;
@@ -173,7 +173,7 @@ main{
 
 .bottom-form{padding: 1rem 0;}
 
-.accept-box{display: block; padding-left: 30px; text-indent: -12px;}
+.accept-box{display: block; padding-left: 30px; text-indent: -12px; color: #BAA387;}
 
 .accept-box input{
 	position: relative;
@@ -209,15 +209,25 @@ main{
 .btn:hover{transform: scale(1.05)}
 .btn:active{transform: scale(0.95)}
 
+.bye{font-size: 1.5rem;}
 
 footer{
 	background-color: #F3F3F3;
 	padding: 20px 80px 50px;
 	display: flex;
 	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.footer-txt{
+	display: flex;
+	flex-flow: row wrap;
 	justify-content: flex-start;
 	align-items: flex-start;
 }
+
+.footer-txt p{ padding-right: 80px;}
 
 .awards-block {
 //	flex-grow: 1;
@@ -226,7 +236,12 @@ footer{
 
 //footer img{padding-top: 15px;}
 
-.deol-logo{width: 200px; max-width: 400px;padding-top: 17px; margin-right: 80px}
+.deol-logo{
+	width: 200px; 
+	max-width: 400px;
+	padding-top: 17px; 
+//	margin-right: 80px
+}
 
 .awards-pic{width: 100%; max-width: 360px;padding-top: 10px; margin-left: -5px;}
 
@@ -269,6 +284,7 @@ footer{
 @media screen and (max-width: 480px) {
 	main{padding: 0 10vw 20px;}
 	footer{padding: 0 10vw 20px;}
+	.footer-txt p{padding-right: 10vw;}
 	.logo{padding: 10vw 0;}
 	
 }
