@@ -209,6 +209,8 @@ main{
 .btn:hover{transform: scale(1.05)}
 .btn:active{transform: scale(0.95)}
 
+.cards img{width: 100px; max-width: 304px;}
+
 .bye{font-size: 1.5rem;}
 
 footer{
@@ -271,7 +273,7 @@ footer{
 	
 	.btn{padding: 1rem 2.5rem;}
 	
-	.bottom-form img{width: 62px;}
+	.bottom-form img{width: 17vw; max-width: 100px;}
 	
 	.awards-pic{width: 100%; max-width: 480px; }
 	
@@ -286,6 +288,9 @@ footer{
 	footer{padding: 0 10vw 20px;}
 	.footer-txt p{padding-right: 10vw;}
 	.logo{padding: 10vw 0;}
+	.bottom-form img{width: 15vw; max-width: 100px;}
+	.bye{font-size: 1.25rem;}
+
 	
 }
 
@@ -295,9 +300,11 @@ footer{
 	
 	html{font-size: 14px;}
 	
+	*{background-color: #fff !important; background-image: none !important; color:#000 !important;}
+	
 	.page-title{padding: 1em 0; background-image: none; text-align: center; background-color: #F3F3F3;}
 	
-	.logo{padding: 0; width: 150px;}
+	.logo{padding: 30px 0 0; width: 150px;}
 	
 	main, footer{padding: 0 30px;}
 	footer {margin-top: 10px;}
