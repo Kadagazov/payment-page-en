@@ -205,15 +205,21 @@ input[type=button] {
 
 @font-face {
   font-family: "Arno Pro";
-  src: url("../fonts/arno-pro/arnopro-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/arno-pro/arnopro-regular.otf") format("opentype"), url("../fonts/arno-pro/arnopro-regular.woff") format("woff"), url("../fonts/arno-pro/arnopro-regular.ttf") format("truetype"), url("../fonts/arno-pro/arnopro-regular.svg#ArnoPro-Regular") format("svg");
+  src: url("../fonts/arno-pro/arnopro-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/arno-pro/ArnoPro-Regular.otf") format("opentype"), url("../fonts/arno-pro/arnopro-regular.woff") format("woff"), url("../fonts/arno-pro/arnopro-regular.ttf") format("truetype"), url("../fonts/arno-pro/arnopro-regular.svg#ArnoPro-Regular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Arno Pro';
-  src: url("../fonts/arno-pro/arnopro-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/arno-pro/arnopro-italic.otf") format("opentype"), url("../fonts/arno-pro/arnopro-italic.woff") format("woff"), url("../fonts/arno-pro/arnopro-italic.ttf") format("truetype"), url("../fonts/arno-pro/arnopro-italic.svg#ArnoPro-Italic") format("svg");
+  src: url("../fonts/arno-pro/arnopro-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/arno-pro/ArnoPro-Italic.otf") format("opentype"), url("../fonts/arno-pro/arnopro-italic.woff") format("woff"), url("../fonts/arno-pro/arnopro-italic.ttf") format("truetype"), url("../fonts/arno-pro/arnopro-italic.svg#ArnoPro-Italic") format("svg");
   font-weight: normal;
   font-style: italic; }
+
+@font-face {
+  font-family: 'Arno Pro';
+  src: url("../fonts/arno-pro/arnopro-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/arno-pro/ArnoPro-Bold.otf") format("opentype"), url("../fonts/arno-pro/arnopro-bold.woff") format("woff"), url("../fonts/arno-pro/arnopro-bold.ttf") format("truetype"), url("../fonts/arno-pro/arnopro-bold.svg#ArnoPro-Italic") format("svg");
+  font-weight: bold;
+  font-style: normal; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -254,7 +260,7 @@ header, main, footer {
 
 h1, h2, h3, h4, h5 {
   font-family: 'Open Sans', 'Helvetica', 'Helvetica Neue', 'Arial', sans-serif;
-  color: #000; }
+  color: #4b4b4b; }
 
 span, a {
   font-family: inherit;
