@@ -57,7 +57,7 @@ a:hover{text-decoration: underline;}
 	
 }
 
-.salute{font-size: 1.2rem; font-weight: 400; text-align: left;	padding: 2em 0 .5em;	}
+.salute{font-size: 1.2rem; font-weight: 400; text-align: left;	padding: 2em 0 .5em;}
 
 .text-header{font-size: .95rem; font-weight: 600; letter-spacing: .05rem; text-align: left; text-transform: uppercase; padding: 2em 0 .5em}
 
@@ -136,8 +136,6 @@ main{
 //	padding-right: 1rem; 
 }
 
-//dd {padding: -2rem 0;}
-
 .arrow-dn{display: inline-block; transform: rotate(90deg) scale(.75, 1.75) translate(-.2rem, 0); font-size: .8em;}
 
 .bottom-form{padding: 1rem 0;}
@@ -200,11 +198,6 @@ footer{
 
 .footer-txt p{ padding-right: 80px;}
 
-.awards-block {
-//	flex-grow: 1;
-	flex-shrink: 1;
-}
-
 //footer img{padding-top: 15px;}
 
 .deol-logo{
@@ -247,8 +240,6 @@ footer{
 	.awards-pic{width: 100%; max-width: 480px; }
 	
 	.deol-logo{width: 40vw;}
-
-
 
 }
 

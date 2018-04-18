@@ -495,10 +495,6 @@ footer {
 .footer-txt p {
   padding-right: 80px; }
 
-.awards-block {
-  -ms-flex-negative: 1;
-  flex-shrink: 1; }
-
 .deol-logo {
   width: 200px;
   max-width: 400px;
