@@ -38,7 +38,7 @@
 	transition: all 0.1s ease-in;
 }
 
-html{font-size: 16px;}
+html{font-size: 18px;}
 
 body {
 	background-color: #303030;
@@ -88,9 +88,9 @@ a:hover{text-decoration: underline;}
 	
 }
 
-.salute{font-size: 1.5rem; font-weight: 400; text-align: left;	padding: 2em 0 .5em;	}
+.salute{font-size: 1.2rem; font-weight: 400; text-align: left;	padding: 2em 0 .5em;	}
 
-.text-header{font-size: 1rem; font-weight: 600; letter-spacing: .05rem; text-align: left; text-transform: uppercase; padding: 2em 0 .5em}
+.text-header{font-size: .95rem; font-weight: 600; letter-spacing: .05rem; text-align: left; text-transform: uppercase; padding: 2em 0 .5em}
 
 p, .plain-text, .terms{
 	font-family: 'Arno Pro', 'Georgia', 'Times New Roman', serif;
@@ -113,7 +113,7 @@ header {
 
 main{
 	background-color: #fff;
-	padding: 20px 80px;
+	padding: 20px 80px 55px;
 }
 
 .info-table{
@@ -250,7 +250,7 @@ footer{
 /* Media Queries */
 @media screen and (max-width: 600px) {
 	
-	html{font-size: 14px;}
+	html{font-size: 16px;}
 
 	header, main, footer {width: 100%;}
 	
@@ -306,12 +306,24 @@ footer{
 	
 	.logo{padding: 30px 0 0; width: 150px;}
 	
+	footer{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-content: flex-start;
+}
+	
 	main, footer{padding: 0 30px;}
 	footer {margin-top: 10px;}
+//	footer div, footer div img{padding: 0;}
+//	.footer-txt p{padding: 0 20px 0 0;}
+
 	
 	.salute{font-size: 1.25rem; font-weight: normal; text-align: left;	padding: 0;	}
 	
-	.text-header{padding: 1em 0;	}
+	.text-header{padding: 1.5em 0 .5em;	}
+//	footer .text-header{padding: 1.5em 0;}
 
 
 	.td-left, .td-right{padding:5px 10px 4px 0;}
@@ -321,6 +333,6 @@ footer{
 	
 	.awards-pic{width: 360px; }
 	
-	.deol-logo{width: 170px;}
+	.deol-logo{width: 170px; padding-top: 0; margin-top: 0;}
 
 }
