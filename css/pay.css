@@ -301,7 +301,7 @@ a:hover {
 p, .plain-text, .terms {
   font-family: 'Arno Pro', 'Georgia', 'Times New Roman', serif;
   color: #808080;
-  padding: 10px 0;
+  padding: .44rem 0;
   line-height: 150%; }
 
 header {
